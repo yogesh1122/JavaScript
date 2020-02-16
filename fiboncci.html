@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fabonacci(num){
+            let prev = 0;
+            let next = 1;
+            let sum = 0;
+            let pattern ='';
+            pattern+=prev+" "+next+" ";
+            for(let i=3;i<=num;i++){
+                sum = prev + next;
+                prev = next;
+                next =sum;
+                pattern+=sum+" ";
+            }
+            return pattern;
+        }
+        console.log(fabonacci(10))
+
+
+    </script>
+</body>
+</html>

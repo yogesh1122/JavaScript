@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let from = prompt("Enter Start From Number");
+      let to = window.prompt("Enter End To Number");
+      from = Number(from);
+      to = Number(to);
+      let allPrimeNo="";
+      for(let i=from;i<=to;i++){
+        if(isPrime(i)){
+            allPrimeNo+=i+" ";
+        }
+      }
+      console.log(allPrimeNo);
+      function isPrime(num){
+        for(let i=2;i<num-1;i++){
+            if(num % i == 0){
+                
+            return false ;
+            }        
+        }
+        return true;
+    }
+    
+    //   if(number % 2){
+    //       console.log("Prime number");
+    //   }else{
+    //       console.log("Not prime number");
+    //   }
+    </script>
+</body>
+</html>

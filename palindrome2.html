@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body><br>
+    <script>
+    //function palindrome(str){
+        var str = prompt("Enter word");
+        var len = str.length;
+        var lopstart = Math.floor(len/2);
+        for(var i=0;i<2;i++){
+            if(str[i] !== str[len-1-i]){
+            //return false;
+                console.log("It is not palindrome");
+            } else {
+                console.log("It is palindrome");   
+            }
+        }
+        //return true;
+        
+        
+    //}
+    //document.write(palindrome("madam"));
+    </script>
+</body>
+</html>

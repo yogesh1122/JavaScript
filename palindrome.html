@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script>
+				// var rem, temp, final = 0;
+				// var number =prompt("Enter value");
+
+				// temp = number;
+				// while(number>0)
+				// {
+				// 	rem = number%10; // rem = 1
+				// 	number = number/10; // number = 12.1
+				// 	final = (final*10)+rem; // 0 * 10 + 1 = 1
+				// }
+				// if(final==temp) // 1 = 121
+				// {
+				// 	window.alert("The inputed number is Palindrome");
+				// }
+				// else
+				// {
+				// 	window.alert("The inputted number is not palindrome");
+				// }
+            
+                var a,b,c,s=0;
+                a = 12;
+                c = a;
+                while(a>0){
+                    b = a%10;
+                    
+                    a = parseInt(a/10);
+                    s = (s*10)+b;
+                }
+                if(c == s){
+                    alert("Yes It is palindrome");
+                } 
+                else{
+                    alert("Not");
+                }
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+        let data="10350130";
+        let zeroCount=0;
+        let charArray = data.split("");
+        let newString = '';
+        for(let i = 0;i<charArray.length;i++){
+            if(charArray[i]=='0'){
+                zeroCount++;
+            }
+            if(charArray[i]!="0"){
+                newString +=charArray[i];
+            }
+        }
+        for(let i =1;i<=zeroCount;i++){
+            newString = newString +"0";
+        }
+
+        console.log(data);
+        
+        console.log(newString);
+        
+    </script>
+ </body>
+ </html>

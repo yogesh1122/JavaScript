@@ -1,0 +1,39 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let size = window.prompt("Enter Size oF Pattern .");
+        size = Number(size);  
+        let pattern ='';
+        for(let i=1;i<=size;i++){
+          if(i==1 || i==size){
+              for(let j=1;j<=size;j++){
+                  pattern+="* ";
+              }
+              pattern+="\n";
+          }else if(i>1 && i<size){
+            for(let k=1;k<=size;k++){
+                if(k==1 || k==size){
+                    pattern+="* ";
+                }else{
+                    pattern+="  ";
+                }
+            }
+            pattern+="\n";
+        }
+    }
+        console.log(pattern);
+    </script>
+
+
+</body>
+</html>
+
+
